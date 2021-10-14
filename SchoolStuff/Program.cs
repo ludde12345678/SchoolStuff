@@ -1,5 +1,7 @@
 ﻿using System;
 using SchoolStuff.Matrixes;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace SchoolStuff
 {
@@ -31,8 +33,13 @@ namespace SchoolStuff
             m2.InsertAt(3, 1, 1);
             m2.InsertAt(2, 2, 1);
 
-            Console.WriteLine(m1.Multiply(m2));
+
+            Matrix m3 = new Matrix(2, 2, new List<int>() { 1,2,3,4 });
+
+
+            Console.WriteLine(m1*m2);
             Console.WriteLine(m1-1);
+            Console.WriteLine(m3);
 
 
 
