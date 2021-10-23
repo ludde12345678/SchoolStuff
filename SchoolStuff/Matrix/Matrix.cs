@@ -114,6 +114,42 @@ namespace SchoolStuff.Matrixes
             }
             return new Matrix(3, 3);
         }
+        public int CalcDeterminant()
+        {
+            if(rows == colums)
+            {
+                LUdecomposition();
+            }
+            return 0;
+        }
+
+        private readonly void LUdecomposition()
+        {
+            int sum = 0;
+            for (int i = 0; i < colums; i++)
+            {
+                // gauss elimination bby
+                int v1 = matrix[i][i];
+                for (int e = i + 1; e < colums; e++)
+                {
+
+                }
+            }
+        }
+
+        public Matrix Identity3()
+        {
+            return new Matrix(3, 3, new List<int>()
+            {1,0,0,
+             0,1,0,
+             0,0,1});
+        }
+        public Matrix Identity2()
+        {
+            return new Matrix(2, 2, new List<int>()
+            {1,0,
+             0,1});
+        }
         public override string ToString()
         {
             string returnstring = "[";
