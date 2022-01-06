@@ -1,9 +1,9 @@
 ﻿using System;
-using SchoolStuff.Matrixes;
+using Maths.Matrixes;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace SchoolStuff
+namespace Maths
 {
     class Program
     {

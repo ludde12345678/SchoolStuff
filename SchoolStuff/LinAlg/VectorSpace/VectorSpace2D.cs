@@ -1,17 +1,29 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Text;
-using SchoolStuff.Matrixes;
+using Maths.Matrixes;
 
-namespace SchoolStuff.LinAlg.VectorRooms
+namespace Maths.LinAlg.VectorRooms
 {
-    class VectorSpace2D
+    struct VectorSpace2D : IEquatable<VectorSpace2D>
     {
         private Matrix orgin;
-        public 
-        public VectorSpace2D()
+        public List<Matrix>baseVectors;
+        public VectorSpace2D(Matrix e1, Matrix e2)
         {
             orgin = new Matrix(2, 1, new List<int>() { 0, 0 });
+            baseVectors = new List<Matrix>() { e1, e2 };
+        }
+
+        public override int GetHashCode()
+        {
+
+        }
+
+        public bool Equals([AllowNull] VectorSpace2D other)
+        {
+            throw new NotImplementedException();
         }
     }
 }

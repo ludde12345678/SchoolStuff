@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SchoolStuff.Matrixes
+namespace Maths.Matrix
 {
-    struct Matrix
+    class Matrix
     {
         private int rows;
         private int colums;
@@ -164,6 +164,17 @@ namespace SchoolStuff.Matrixes
             returnstring = returnstring.TrimEnd(' ', '\n', ',');
             returnstring += "]\n";
             return returnstring;
+        }
+        public override int GetHashCode()
+        {
+            int sum = 0;
+            for (int i = 0; i < rows; i++)
+            {
+                for (int e = 0; e < colums; e++)
+                {
+                    sum += matrix[i][e]
+                }
+            }
         }
     }
 }

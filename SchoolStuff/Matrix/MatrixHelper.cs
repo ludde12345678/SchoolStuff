@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SchoolStuff.Matrixes
+namespace Maths.Matrixes
 {
     class MatrixHelper
     {
